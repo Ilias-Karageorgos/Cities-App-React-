@@ -1,17 +1,23 @@
+import classes from './CityItem.module.css'
 
 function CityItem(props) {
 
     return (
 
-        <li>
-            <div>
+        <li className={classes.item}>
+
+            <div className={classes.content}>
                 <h3>{props.title}</h3>
                 <country>{props.country}</country>
+                <p>{props.description}</p>
+
             </div>
-            <div>
-                <button className="btn btn">Add to favorites</button>
+
+            <div className={classes.actions}>
+                <button>Add to favorites</button>
             </div>
-            <div>
+
+            <div className={classes.image} >
                 <img src={props.image} alt={props.title}/>
             </div>            
          </li>

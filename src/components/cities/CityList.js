@@ -12,8 +12,9 @@ function CityList(props) {
                 image = {city.image}
                 title = {city.title}
                 country = {city.country}
+                description = {city.description}
                 />
-            ))            
+            ))     
             }
         </ul>
     );
